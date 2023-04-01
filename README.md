@@ -1,1 +1,1 @@
-Learning html, css, js by creating these projects.
+#### This repository contains projects from Brad Traversy's course.
