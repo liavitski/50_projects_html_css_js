@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  flex-direction: column;
+}
+
+.progress-bar-wrapper {
+  width: 300px;
+}
+
+.progress-bar {
+  position: relative;
+  display: flex;
+  list-style: none;
+  padding: 0;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+.progress-bar::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  height: 2px;
+  background-color: rgb(165, 165, 163);
+  z-index: -1;
+}
+
+.progress {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0%;
+  height: 2px;
+  background-color: rgb(0, 166, 255);
+  z-index: -1;
+  transition: 0.4s ease;
+}
+
+.progress-bar li {
+  position: relative;
+  border: 2px solid rgb(165, 165, 163);
+  color: rgb(99, 99, 98);
+  background-color: white;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+  /* disable text selection */
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+.progress-bar li.selected {
+  border: 2px solid rgb(0, 166, 255);
+  transition: 0.4s ease;
+}
+
+.buttons-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.btn {
+  padding: 8px 32px;
+  background-color: rgb(0, 166, 255);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.btn:hover {
+  background-color: rgb(69, 186, 249);
+}
+
+.btn:disabled {
+  background-color: rgb(165, 165, 163);
+  cursor: not-allowed;
+}
+
+.disabled:hover {
+  background-color: rgb(190, 190, 190);
+}
