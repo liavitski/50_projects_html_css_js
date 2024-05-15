@@ -46,8 +46,7 @@ body {
   width: 0%;
   height: 2px;
   background-color: rgb(0, 166, 255);
-  z-index: -1;
-  transition: 0.4s ease;
+  transition: 0.8s ease;
 }
 
 .progress-bar li {
@@ -70,7 +69,7 @@ body {
 
 .progress-bar li.selected {
   border: 2px solid rgb(0, 166, 255);
-  transition: 0.4s ease;
+  transition: 0.8s ease;
 }
 
 .buttons-wrapper {
