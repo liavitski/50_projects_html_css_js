@@ -1,32 +1,32 @@
-@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Ubuntu', sans-serif;
-    margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    overflow: hidden;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
 }
 
 .bg {
-    background: url(pic/IMG_4403.JPG) no-repeat center center/cover;
-    position:absolute;
-    top: -30px;
-    left: -30px;
-    width: calc(100vw + 60px);
-    height: calc(100vh + 60px);
-    z-index: -1;
-    filter: blur(0px)
+  background: url('/05_blurry_loading/pic/IMG_4403.JPG') no-repeat
+    center center/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  filter: blur(0px);
 }
 
 .loading-text {
-    font-size: 50px;
-    color: #fff;
+  font-size: 50px;
+  color: white;
 }
-
