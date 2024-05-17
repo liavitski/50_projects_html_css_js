@@ -15,7 +15,12 @@ function resize(e) {
     // target neighboring element
     const neighboringEl = elements[nearIndex];
 
-    clickedEl.style.flex = 3;
-    neighboringEl.style.flex = 1;
+    if (clickedEl.style.flex === 3) {
+      clickedEl.style.flex = 1;
+      neighboringEl.style.flex = 3;
+    } else {
+      clickedEl.style.flex = 3;
+      neighboringEl.style.flex = 1;
+    }
   }
 }

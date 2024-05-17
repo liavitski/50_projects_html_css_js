@@ -29,6 +29,11 @@ section h2 {
   font-size: 2.5rem;
   color: rgb(59, 5, 238);
   user-select: none;
+  white-space: nowrap;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .playStation {
@@ -39,6 +44,15 @@ section h2 {
   background-repeat: no-repeat;
   background-size: cover;
   transition: flex 0.3s ease;
+  position: relative;
+}
+
+.playStation::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(162, 43, 226, 0.412);
 }
 
 .xBox {
@@ -48,6 +62,16 @@ section h2 {
   background-repeat: no-repeat;
   background-size: cover;
   transition: flex 0.3s ease;
+  position: relative;
+}
+
+.xBox::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(127, 255, 212, 0.236);
+  /* z-index: -1; */
 }
 
 .btn {
@@ -58,8 +82,13 @@ section h2 {
   color: rgb(98, 62, 214);
   font-weight: bold;
   cursor: pointer;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-wrap: nowrap;
 }
 
 .btn:hover {
-  background-color: rgba(0, 0, 255, 0.148);
+  background-color: rgb(0, 0, 255);
 }
