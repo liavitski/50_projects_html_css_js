@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  height: 100vh;
+  flex-direction: column;
+  background-color: #f1f1f1;
+}
+
+h1 {
+  margin: 2rem;
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 1.25rem;
+}
+
+.card {
+  background-color: inherit;
+  width: 500px;
+  padding: 16px 32px;
+  border-radius: 8px;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px,
+    rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+  position: relative;
+  margin-bottom: 24px;
+  overflow: hidden;
+  transition: 0.3s ease;
+}
+
+.close {
+  cursor: pointer;
+  padding: 8px;
+  position: absolute;
+  right: 32px;
+  font-size: 24px;
+  top: 24px;
+}
+
+.open {
+  cursor: pointer;
+  padding: 8px;
+  position: absolute;
+  right: 29px;
+  top: 24px;
+  font-size: 21px;
+}
+
+.card .close {
+  display: none;
+}
+
+.card .open {
+  display: block;
+}
+
+.card .message {
+  display: none;
+}
+
+.card p {
+  display: none;
+}
+
+.card.visible {
+  background-color: white;
+}
+
+.card.visible .close {
+  display: block;
+}
+
+.card.visible .open {
+  display: none;
+}
+
+.card.visible .message {
+  display: block;
+  position: absolute;
+  font-size: 96px;
+  color: rgba(0, 128, 0, 0.202);
+  left: -10px;
+  top: -10px;
+}
+
+.card.visible p {
+  display: block;
+}

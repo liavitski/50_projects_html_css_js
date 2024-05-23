@@ -6,18 +6,18 @@ const eventCodeCard = document.querySelector('#event-code');
 
 window.addEventListener('keydown', keyPressed);
 
-// function keyPressed(e) {
-//   proposal.style.display = 'none';
-//   codesWrapper.style.display = 'flex';
+function keyPressed(e) {
+  proposal.style.display = 'none';
+  codesWrapper.style.display = 'flex';
 
-//   if (e.key === ' ') {
-//     eventKeyCard.textContent = 'Space';
-//   }
+  if (e.key === ' ') {
+    eventKeyCard.textContent = 'Space';
+  }
 
-//   eventKeyCard.textContent = e.key;
-//   eventKeyCodeCard.textContent = e.keyCode;
-//   eventCodeCard.textContent = e.code;
-// }
+  eventKeyCard.textContent = e.key;
+  eventKeyCodeCard.textContent = e.keyCode;
+  eventCodeCard.textContent = e.code;
+}
 
 function keyPressed(event) {
   codesWrapper.innerHTML = `
