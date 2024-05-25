@@ -3,14 +3,12 @@ const choicesWrapper = document.querySelector('#choices-wrapper');
 
 textArea.focus();
 
-// console.dir(textArea);
-
 textArea.addEventListener('keyup', (e) => {
   handleKeyPress(e.target.value);
   const inputValue = e.target.value.trim();
 
   if (!inputValue) {
-    choicesWrapper.innerHTML = '';
+    // choicesWrapper.innerHTML = '';
     return;
   }
 
