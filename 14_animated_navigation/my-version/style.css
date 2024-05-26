@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: rgb(239, 216, 157);
+  background-image: linear-gradient(
+    to top,
+    rgb(239, 216, 157) 0%,
+    rgb(142, 118, 60) 50%
+  );
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  padding: 20px 0;
+  width: 316px;
+  background-color: white;
+  transition: width 0.6s linear;
+  overflow-x: hidden;
+}
+
+.navigation.active {
+  width: 100px;
+}
+
+.navigation ul {
+  list-style-type: none;
+  display: flex;
+  gap: 12px;
+  color: black;
+  margin: 0;
+  padding: 0;
+  transition: width 0.6s ease;
+}
+
+.navigation.active ul {
+  width: 0;
+  pointer-events: none;
+  /* display: none; */
+}
+
+.navigation ul li {
+  transform: rotateY(0deg);
+  opacity: 1;
+  transition: transform 0.6s linear, opacity 0.6s linear;
+}
+
+.navigation.active ul li {
+  transform: rotateY(360deg);
+  opacity: 0;
+}
+
+.navigation ul a {
+  text-decoration: none;
+  color: black;
+  transition: color 0.2s ease;
+}
+
+.navigation ul a:hover {
+  color: rgb(239, 89, 89);
+}
+
+.navigation.active ul a {
+  transform: rotate(45deg);
+}
+
+.btn {
+  background-color: transparent;
+  height: 32px;
+  width: 32px;
+  padding: 0;
+  position: relative;
+  cursor: pointer;
+  border: none;
+}
+
+.navigation.active .btn {
+  left: -10px;
+}
+
+.btn .line {
+  position: absolute;
+  transform: rotate(45deg);
+  height: 2px;
+  width: 30px;
+  background-color: rgba(80, 80, 244, 0.722);
+  transition: transform 0.6s linear;
+  transform-origin: 50%;
+}
+
+.btn .line.line2 {
+  transform: rotate(-45deg);
+}
+
+.navigation.active .btn .line {
+  transform: rotate(360deg) translateY(5.5px);
+}
+
+.navigation.active .btn .line2 {
+  transform: rotate(-360deg) translateY(-5.5px);
+}
