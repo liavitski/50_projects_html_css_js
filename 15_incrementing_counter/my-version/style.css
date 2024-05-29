@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: 'Muli', sans-serif;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background-color: rgb(149, 80, 149);
+}
+
+.counters-wrapper {
+  display: flex;
+  gap: 64px;
+}
+
+.counter-card-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  color: white;
+  font-style: bold;
+}
+
+.counter-card-wrapper .icon .fa-brands {
+  font-size: 32px;
+}
+
+.counter {
+  font-size: 42px;
+}
+
+small {
+  font-size: 12px;
+}
+
+@media (max-width: 552px) {
+  .counters-wrapper {
+    flex-direction: column;
+  }
+}
