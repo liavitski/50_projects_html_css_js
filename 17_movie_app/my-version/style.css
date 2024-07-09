@@ -1,16 +1,126 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap');
+
+:root {
+  --primary-color: rgb(81, 106, 127);
+  --secondary-color: rgb(41, 65, 84);
+}
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    overflow: hidden;
-    flex-direction: column;
+  background-color: var(--primary-color);
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 1rem;
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  margin: 1rem;
+}
+
+.search {
+  padding: 0.7rem;
+  border-radius: 16px;
+  border: 2px solid var(--secondary-color);
+  background-color: transparent;
+  font-size: 1rem;
+  color: aliceblue;
+}
+
+.search::placeholder {
+  color: rgb(198, 228, 240);
+}
+
+main {
+  margin: 0 auto;
+  max-width: 1300px;
+  background-color: var(--secondary-color);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+  justify-content: center;
+  border-radius: 8px;
+}
+
+.card {
+  width: 300px;
+  height: 500px;
+  overflow: hidden;
+  border-radius: 8px;
+  position: relative;
+  background-color: var(--primary-color);
+}
+
+.card img {
+  width: 100%;
+  height: 70%;
+  object-fit: contain;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  padding: 0.5rem;
+}
+
+span {
+  padding: 0.3rem;
+}
+
+span.green {
+  background-color: green;
+}
+span.yellow {
+  background-color: yellow;
+}
+span.red {
+  background-color: red;
+}
+
+.overview {
+  background-color: #eee;
+  position: absolute;
+  padding: 0.4rem;
+  max-height: 70%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transform: translateY(101%);
+  transition: transform 0.3s ease-in;
+}
+
+.card:hover .overview {
+  transform: translateY(0);
+}
+
+.buttons-wrapper {
+  margin: 0 auto;
+  max-width: fit-content;
+}
+
+button {
+  margin-top: 1rem;
+  padding: 0.45rem;
+  font-family: inherit;
+  border: none;
+  cursor: pointer;
+  background-color: aqua;
+  color: black;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+button:active {
+  transform: scale(0.98);
 }
