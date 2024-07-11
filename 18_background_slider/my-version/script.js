@@ -36,3 +36,11 @@ function updateSlide(direction) {
 
 btnLeft.addEventListener('click', () => updateSlide('left'));
 btnRight.addEventListener('click', () => updateSlide('right'));
+
+window.addEventListener('keydown', (e) => {
+  if (e.key == 'ArrowRight') {
+    updateSlide('left');
+  } else if (e.key == 'ArrowLeft') {
+    updateSlide('right');
+  }
+});
