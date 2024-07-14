@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: rgb(145, 172, 236);
+}
+
+@media (max-width: 800px) {
+  body {
+    flex-direction: column;
+  }
+}
+
+.box {
+  height: 100px;
+  width: 100px;
+  border: 2px solid rgba(0, 0, 0, 0.717);
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+}
+
+.fill {
+  background-image: url('../../05_blurry_loading/pic/IMG_4403.JPG');
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+}
+
+.hold {
+  border: solid 5px #ccc;
+}
+
+.hovered {
+  background-color: #333;
+  border-color: white;
+  border-style: dashed;
+}
