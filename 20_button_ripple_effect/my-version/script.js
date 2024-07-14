@@ -16,7 +16,7 @@ btn.addEventListener('click', function (e) {
   circle.style.left = xInside + 'px';
   this.appendChild(circle);
 
-  setTimeout(() => {
-    circle.remove();
-  }, 500);
+    setTimeout(() => {
+      circle.remove();
+    }, 500);
 });
