@@ -1,0 +1,138 @@
+@font-face {
+  font-family: 'Mona Sans';
+  src: url('../../Mona Sans/Mona-Sans.woff2')
+      format('woff2 supports variations'),
+    url('../../Mona Sans/Mona-Sans.woff2') format('woff2-variations');
+  font-weight: 200 900;
+  font-stretch: 75% 125%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: 'Mona Sans', sans-serif;
+  padding-bottom: 50px;
+}
+
+header {
+  background-color: rgb(52, 52, 52);
+  padding: 20px 16px;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  transition: all 0.3s ease-in-out;
+}
+
+.header-wrapper {
+  height: 100%;
+  max-width: 800px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+header h1 {
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  pointer-events: none;
+  transition: all 0.3s ease-in-out;
+}
+
+header nav {
+  display: flex;
+  gap: 16px;
+}
+
+header nav li {
+  list-style-type: none;
+}
+
+header nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 300;
+  transition: all 0.3s ease-in-out;
+}
+
+header nav a:hover {
+  color: rgb(208, 38, 38);
+}
+
+header.header-active {
+  background-color: rgb(231, 232, 233);
+  padding: 14px 16px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.header-active h1 {
+  color: black;
+}
+
+.header-active a {
+  color: black;
+}
+
+header .active {
+  color: rgb(246, 83, 83);
+}
+// MAIN
+main {
+}
+
+section {
+  padding: 16px;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(104, 102, 102, 0.776);
+}
+
+.bg-section {
+  background-image: url(../pic/pexels-eugene-golovesov.jpg);
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.bg-section h2 {
+  font-weight: 500;
+  font-size: 2rem;
+  z-index: 1;
+}
+
+.bg-section p {
+  opacity: 0.8;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+}
+
+.bg-section h2,
+.bg-section p {
+  color: white;
+}
+
+.text-section {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.text-section h2 {
+  margin-bottom: 16px;
+}
