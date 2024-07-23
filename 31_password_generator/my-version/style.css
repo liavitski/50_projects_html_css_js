@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  flex-direction: column;
+  background-color: #3d3da3;
+}
+
+.wrapper {
+  background-color: rgb(34, 34, 102);
+  padding: 16px;
+  height: 380px;
+  width: 300px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 2px;
+}
+
+.wrapper h1 {
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+#password {
+  color: white;
+}
+
+.input-wrapper {
+  background-color: rgb(24, 24, 70);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 4px 4px 8px;
+}
+
+.input-wrapper input {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 1.25rem;
+  padding-left: 4px;
+  width: 200px;
+  /* border: 2px solid red; */
+}
+
+.input-wrapper input:focus {
+  outline: none;
+}
+
+label input[type='number'] {
+  width: 40px;
+}
+
+.fa-clipboard {
+}
+
+label {
+  display: flex;
+  color: white;
+  font-size: 1rem;
+  justify-content: space-between;
+  margin-top: 12px;
+  cursor: pointer;
+}
+
+label:hover {
+  color: rgb(220, 218, 218);
+}
+
+button {
+  background-color: rgb(61, 61, 163);
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: rgba(61, 61, 163, 0.739);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+.clipboard-btn {
+  width: 30px;
+  height: 30px;
+}
+
+#generate-btn {
+  margin-top: 20px;
+  width: 100%;
+  padding: 4px 0;
+  border-radius: 2px;
+  font-size: 1.25ren;
+}
