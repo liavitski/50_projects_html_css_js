@@ -42,7 +42,6 @@ function generatePassword(lower, upper, number, symbol, length) {
 
   const randomisedTypesArr = shuffleArray(typesArr);
 
-  console.log(randomisedTypesArr);
   if (typesCount === 0) {
     return '';
   }

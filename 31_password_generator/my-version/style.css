@@ -61,9 +61,6 @@ label input[type='number'] {
   width: 40px;
 }
 
-.fa-clipboard {
-}
-
 label {
   display: flex;
   color: white;
